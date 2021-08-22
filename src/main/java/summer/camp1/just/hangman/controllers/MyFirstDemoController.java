@@ -23,7 +23,11 @@ public class MyFirstDemoController {
 		return "index.html";
 	}
 	
+<<<<<<< HEAD
 	@PostMapping(value = "/create", consumes = MediaType.APPLICATION_FORM_URLENCODED_VALUE)
+=======
+	@PostMapping(value = "/game", consumes = MediaType.APPLICATION_FORM_URLENCODED_VALUE)
+>>>>>>> aa19348a8505c41c553522407ad95135ea003a14
 	public String register(@ModelAttribute User user, Model model) {	
 		Game game = gameService.create(user);
 		model.addAttribute("currentWord",game.getCurrWord());
@@ -31,6 +35,7 @@ public class MyFirstDemoController {
 		return "gameScreen.html";
 	}
 	
+<<<<<<< HEAD
 	@PostMapping(value = "/guess", consumes = MediaType.APPLICATION_FORM_URLENCODED_VALUE)
 	public String guessTheWord(@ModelAttribute Game game, Model model, @ModelAttribute String guessWord, Model word) {	
 		word.getAttribute("guessWord");
@@ -40,4 +45,6 @@ public class MyFirstDemoController {
 		return "gameScreen.html";
 	}
 	
+=======
+>>>>>>> aa19348a8505c41c553522407ad95135ea003a14
 }

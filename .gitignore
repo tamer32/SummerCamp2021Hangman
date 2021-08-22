@@ -36,4 +36,7 @@ build/
 /.mvn/wrapper/*.properties
 /*.cmd
 /mvnw
+<<<<<<< HEAD
 /bin/
+=======
+>>>>>>> aa19348a8505c41c553522407ad95135ea003a14
