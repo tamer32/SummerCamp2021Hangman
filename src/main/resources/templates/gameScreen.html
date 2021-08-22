@@ -2,9 +2,15 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Hangman</title>
 </head>
 <body>
+<form action="/guess" th:object="${game}" th:object="${guessWord}"
+ method="post">
+</form>
 	<span th:text="${currentWord}"></span>
-</body>
+	<span th:text="${remainingChars}"></span>
+	<label for="GuessTheWord">Guess the word:</label>
+  <input type="text" id="guessWord" name="guessWord" value="">
+  <input type="submit" value="Submit">
 </html>
